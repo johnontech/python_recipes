@@ -5,10 +5,9 @@ from source.service.PropertyFileService import PropertyFileService
 # PropertyFileService class is working properly.
 class TestPropertyFileService(unittest.TestCase):
 
-    # This setup method also called a test fixture. It ensures that the tests in this test suite
-    # always starts with the instance variable is always initialized with an instance of the
-    # PropertyFileService class before it starts. The setUp method is run before each method in the
-    # test suite is run.
+    # This setup method is also called a test fixture. It ensures that the tests in this test suite
+    # always starts with an instance variable containing the PropertyFileService class before it start.
+    # The setUp method is run before each method in the test suite.
     def setUp(self):
         self._propertyFileService = PropertyFileService("C:/training/properties/TestProperties.properties")
 
