@@ -9,7 +9,7 @@ class TestPropertyFileService(unittest.TestCase):
     # always starts with an instance variable containing the PropertyFileService class before it start.
     # The setUp method is run before each method in the test suite.
     def setUp(self):
-        self._propertyFileService = PropertyFileService("C:/training/properties/TestProperties.properties")
+        self._propertyFileService = PropertyFileService("C:/business/0_from_git/python_recipes/config/TestProperties.properties")
 
     def test_readDatabaseUserId(self):
         databaseUserId = self._propertyFileService.read("DATABASE_CONNECTION", "database.user.id")
